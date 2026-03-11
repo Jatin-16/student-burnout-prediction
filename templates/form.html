@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Burnout Assessment</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="container mt-4">
+<h3>Enter Student Details</h3>
+
+<form action="/predict" method="post">
+
+<label>Study Time (1–4)</label>
+<input name="studytime" type="number" min="1" max="4" class="form-control" required>
+
+<label>Travel Time (1–4)</label>
+<input name="traveltime" type="number" min="1" max="4" class="form-control" required>
+
+<label>Past Failures</label>
+<input name="failures" type="number" min="0" max="3" class="form-control" required>
+
+<label>Absences</label>
+<input name="absences" type="number" class="form-control" required>
+
+<label>Health (1–5)</label>
+<input name="health" type="number" min="1" max="5" class="form-control" required>
+
+<label>Free Time (1–5)</label>
+<input name="freetime" type="number" min="1" max="5" class="form-control" required>
+
+<label>Going Out (1–5)</label>
+<input name="goout" type="number" min="1" max="5" class="form-control" required>
+
+<label>First Internal Grade (G1)</label>
+<input name="G1" type="number" min="0" max="20" class="form-control" required>
+
+<label>Second Internal Grade (G2)</label>
+<input name="G2" type="number" min="0" max="20" class="form-control" required>
+
+<br>
+<button class="btn btn-success">Analyze Burnout Risk</button>
+</form>
+</body>
+</html>
